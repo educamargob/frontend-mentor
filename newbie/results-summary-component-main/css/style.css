@@ -1,0 +1,9 @@
+/* Global */
+@import "./global/global.css";
+
+/* Utilities */
+@import "./utilities/colors.css";
+@import "./utilities/components.css";
+
+/* Results */
+@import "./results/results.css";

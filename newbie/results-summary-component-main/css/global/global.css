@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: var(--c-3);
+  background: var(--c-0);
+}
+
+h1,
+h3,
+h2,
+ul,
+p{
+  margin: 0px;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+[src$=".jpg"] {
+  border-radius: 4px;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main [src$=".svg"] {
+  max-width: 24px;
+}
+
