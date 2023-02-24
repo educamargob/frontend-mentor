@@ -1,0 +1,51 @@
+:root {
+    /* Neutral */
+    --c-0: hsl(0, 0%, 100%);
+    --c-1: hsl(221, 100%, 96%);
+    --c-2: hsl(241, 100%, 89%);
+    --c-3: hsl(224, 30%, 27%);
+
+    /* Primary */
+    --c-p1: hsl(0, 100%, 67%);
+    --c-p2: hsl(39, 100%, 56%);
+    --c-p3: hsl(166, 100%, 37%);
+    --c-p4: hsl(234, 85%, 45%); 
+
+    /* Primary low opacity */
+
+    --c-p1-l: hsla(0, 100%, 67%, 0.045);
+    --c-p2-l: hsl(39, 100%, 56%, 0.045);
+    --c-p3-l: hsl(166, 100%, 37%, 0.045);
+    --c-p4-l: hsl(234, 85%, 45%, 0.045); 
+
+    /* Gradients */
+    --gradient-1: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    --gradient-2: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+
+}
+
+.c-0 {
+    color: var(--c-0);
+}
+.c-1 {
+    color: var(--c-1);
+}
+.c-2 {
+    color: var(--c-2);
+}
+.c-3 {
+    color: var(--c-3);
+}
+
+.c-p1 {
+    color: var(--c-p1);
+}
+.c-p2 {
+    color: var(--c-p2);
+}
+.c-p3 {
+    color: var(--c-p3);
+}
+.c-p4 {
+    color: var(--c-p4);
+}

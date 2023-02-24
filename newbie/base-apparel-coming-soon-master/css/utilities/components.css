@@ -1,0 +1,15 @@
+.button {
+    width: 100%;
+    background: var(--c-3);
+    border: none;
+    color: var(--c-0);
+    padding: 20px 0;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.button:hover {
+    background: var(--gradient-1);
+    cursor: pointer;
+}
