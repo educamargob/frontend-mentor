@@ -13,13 +13,16 @@
     text-align: center;
     background: var(--gradient-1);
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .results-round {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 32px auto;
+    margin: 0 auto;
     width: 150px;
     height: 150px;
     background: var(--gradient-2);
@@ -37,20 +40,25 @@
 }
 
 .results-detail {
-    padding: 44px 64px 48px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 44px 0;
 }
 
 .results-list {
     display: flex;
     flex-direction: column;
-    padding: 32px 0;
+    gap: 16px;
+    padding: 20px 0;
 }
 
 .results-list li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 14px 12px;
+    border-radius: 14px;
 }
 
 .results-list .item-name {
@@ -59,3 +67,27 @@
     gap: 12px;
 }
 
+.results-list .reaction {
+    background: var(--c-p1-l);
+}
+
+.results-list .memory {
+    background: var(--c-p2-l);
+}
+
+.results-list .verbal {
+    background: var(--c-p3-l);
+}
+
+.results-list .visual {
+    background: var(--c-p4-l);
+}
+
+@media (max-width: 600px) {
+    .results {
+        grid-template-columns: 1fr;
+    }
+    .results-avg {
+        border-radius: 0 0 20px 20px;
+    }
+}

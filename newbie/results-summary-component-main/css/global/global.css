@@ -50,3 +50,9 @@ main [src$=".svg"] {
   max-width: 24px;
 }
 
+@media (max-width: 600px) {
+  main {
+    justify-content: start;
+  }
+}
+
