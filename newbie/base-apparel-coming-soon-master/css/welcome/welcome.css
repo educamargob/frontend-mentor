@@ -1,7 +1,20 @@
 .welcome {
-    padding: 60px 120px;
+  padding: 60px 165px;
+  max-width: 450px;
 }
 
 .welcome .logo {
-    margin-bottom: 120px;
+  margin-bottom: 136px;
+}
+
+.welcome-title {
+  margin-bottom: 20px;
+}
+
+.welcome-message {
+  margin-bottom: 36px;
+}
+
+.big-image img {
+  height: 100%;
 }

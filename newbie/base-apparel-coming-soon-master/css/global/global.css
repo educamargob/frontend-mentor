@@ -1,11 +1,12 @@
 body {
   margin: 0px;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: var(--c-3);
   background: var(--c-0);
 }
 
 main {
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr auto;
 }
@@ -14,7 +15,7 @@ h1,
 h3,
 h2,
 ul,
-p{
+p {
   margin: 0px;
 }
 
@@ -37,4 +38,3 @@ img {
   height: auto;
   display: block;
 }
-

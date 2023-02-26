@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,37 @@
 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
   <main>
     <section class="welcome">
       <div class="logo">
         <img src="./images/logo.svg" alt="Website Logo">
       </div>
-      <h1 class="welcome-title">
-          <span>We're</span>
-          coming 
-          soon
+      <h1 class="welcome-title font-1-xl-b c-p3">
+        <span class="font-1-xl c-p2">We're</span>
+        coming
+        soon
       </h1>
 
-      <p class="welcome-message">
+      <p class="welcome-message font-1-s-b c-p2">
         Hello fellow shoppers! We're currently building our new fashion store.
         Add your email below to stay up-to-date with announcements and our launch deals.
       </p>
-    
-      <form action="./">
+
+      <form action="./" class="form">
         <label for="email" style="display: none">email</label>
-        <input type="email" id="email" name="email" placeholder="Email Address">
+        <input class="error" type="email" id="email" name="email" placeholder="Email Address">
         <button><img src="./images/icon-arrow.svg" alt=""></button>
       </form>
     </section>
@@ -44,4 +47,5 @@
     </div>
   </main>
 </body>
+
 </html>
