@@ -20,11 +20,15 @@
 </head>
 
 <body>
-  <main>
-    <section class="welcome">
-      <div class="logo">
-        <img src="./images/logo.svg" alt="Website Logo">
-      </div>
+  <header class="logo container">
+    <img src="./images/logo.svg" alt="Website Logo">
+  </header>
+  <picture class="big-image">
+    <source media="(max-width:1000px)" srcset="./images/hero-mobile.jpg">
+    <img src="./images/hero-desktop.jpg" alt="Woman in orange">
+  </picture>
+  <main class="welcome container">
+    <section>
       <h1 class="welcome-title font-1-xl-b c-p3">
         <span class="font-1-xl c-p2">We're</span>
         coming
@@ -41,11 +45,9 @@
         <input class="error" type="email" id="email" name="email" placeholder="Email Address">
         <button><img src="./images/icon-arrow.svg" alt=""></button>
       </form>
+      <span class="form-errors font-1-s c-p1">Please provide a valid email</span>
     </section>
-    <div class="big-image">
-      <img src="./images/hero-desktop.jpg" alt="Woman in orange">
-    </div>
   </main>
+  <script src="./js/validate.js"></script>
 </body>
-
 </html>

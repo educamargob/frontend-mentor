@@ -2,13 +2,9 @@ body {
   margin: 0px;
   font-family: "Josefin Sans", sans-serif;
   color: var(--c-3);
-  background: var(--c-0);
-}
-
-main {
-  height: 100vh;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr auto ;
+  height: 100vh;
 }
 
 h1,
@@ -37,4 +33,18 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+header {
+  margin-top: 64px;
+  margin-left: 36px;
+  height: 36px;
+}
+
+
+@media (max-width: 1000px){
+  body {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }
