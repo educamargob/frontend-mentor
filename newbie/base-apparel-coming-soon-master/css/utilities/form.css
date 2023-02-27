@@ -2,6 +2,13 @@
   position: relative;
 }
 
+.error-icon {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 112px;
+}
+
 .form input::placeholder {
   color: hsl(348, 16%, 82%);
 }

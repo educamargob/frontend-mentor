@@ -43,9 +43,10 @@
       <form action="./" class="form">
         <label for="email" style="display: none">email</label>
         <input class="error" type="email" id="email" name="email" placeholder="Email Address">
-        <button><img src="./images/icon-arrow.svg" alt=""></button>
+        <img src="./images/icon-error.svg" alt="error-icon" class="error-icon">
+        <button aria-label="submit"><img src="./images/icon-arrow.svg" alt=""></button>
       </form>
-      <span class="form-errors font-1-s c-p1">Please provide a valid email</span>
+      <span class="form-errors font-1-s c-p1"></span>
     </section>
   </main>
   <script src="./js/validate.js"></script>
