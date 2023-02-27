@@ -4,12 +4,14 @@
 
 .welcome-message {
   margin-bottom: 36px;
+  line-height: 1.75rem;
 }
 
 .big-image img {
   height: 100%;
   object-fit: cover;
 }
+
 .big-image {
   grid-column: 2;
   grid-row: 1 / 3;
