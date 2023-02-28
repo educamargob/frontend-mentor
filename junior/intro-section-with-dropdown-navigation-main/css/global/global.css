@@ -1,0 +1,39 @@
+body {
+  background: var(--c-1);
+  margin: 0px;
+  font-family: 'Epilogue', sans-serif;
+  color: var(--c-3);
+}
+
+h1,
+h3,
+h2,
+ul,
+p {
+  margin: 0px;
+}
+
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+@media (max-width: 1000px){
+  body {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

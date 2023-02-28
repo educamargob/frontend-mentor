@@ -1,0 +1,38 @@
+.font-1-xl {
+  font: 300 4rem/1.125 "Josefin Sans", sans-serif;
+  letter-spacing: 1.125rem;
+  text-transform: uppercase;
+}
+
+.font-1-xl-b {
+  font: 600 4rem/1.25 "Josefin Sans", sans-serif;
+  letter-spacing: 1.125rem;
+  text-transform: uppercase;
+}
+
+.font-1-s-b {
+  font: 600 1rem/1.25 "Josefin Sans", sans-serif;
+}
+
+.font-1-s {
+  font: 400 0.8rem/1 "Josefin Sans", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .font-1-xxl {
+    font-size: 3rem;
+  }
+
+  .font-2-l,
+  .font-2-l-b {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .font-1-xl-b {
+    font-size: 2.5rem;
+  }
+  .font-1-xl {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,29 @@
+.container {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.outline-button {
+  width: 100%;
+  border: 1px solid var(--c-2);
+  color: var(--c-2);
+  padding: 14px 21px;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.outline-button:hover {
+  border: 1px solid var(--c-3);
+  color: var(--c-3);
+  cursor: pointer;
+}
+
+@media (max-width: 1000px){
+  .container {
+    padding: 0;
+    max-width: 450px;
+  }
+}

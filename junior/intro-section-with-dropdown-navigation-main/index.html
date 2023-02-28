@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -13,11 +17,32 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
 </head>
 <body>
-
-  Features
-  Company
+  <header class="header">
+    <div class="header-section">
+      <a href="./">
+        <img src="./images/logo.svg" alt="snap logo">
+      </a>
+      <nav aria-label="primary-menu">
+        <ul class="header-menu">
+          <li class="dropdown-item">Features</li>
+          <li class="dropdown-item">Company</li>
+          <li><a href="./">Careers</a></li>
+          <li><a href="./">About</a></li>
+        </ul>
+      </nav>
+      <div class="header-buttons">
+        <a href="./">Login</a>
+        <a class="outline-button" href="./">Register</a>
+      </div>
+    </div>
+  </header>
+  <main>
+  </main>
+  <!-- 
+  
   Careers
   About
 
@@ -29,7 +54,7 @@
   Get your team in sync, no matter your location. Streamline processes, 
   create team rituals, and watch productivity soar.
 
-  Learn more
+  Learn more -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

@@ -1,0 +1,87 @@
+.header {
+  padding: 30px 60px;
+  color: var(--c-2);
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.header-buttons {
+  height: min-content;
+  margin-left: auto;
+}
+
+.header-buttons a:first-child{
+  margin-right: 40px;
+}
+
+.header-menu li{
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.header-menu li:hover {
+  color: var(--c-3);
+  cursor: pointer;
+}
+
+.dropdown-item::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 6px;
+  background: url("../../images/icon-arrow-down.svg");
+  margin-left: 4px;
+  margin-bottom: 2px;
+}
+
+@media (max-width:1000px) {
+  .header {
+    padding: 20px 40px;
+  }
+
+  .header-section {
+    gap: 30px;
+  }
+
+  .header-buttons a:first-child{
+    margin-right: 20px;
+  }
+  
+  .header-menu li{
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width:800px) {
+  .header {
+    padding: 20px 20px;
+  }
+
+  .header-section {
+    gap: 20px;
+  }
+
+  .header-buttons a:first-child{
+    margin-right: 10px;
+  }
+  
+  .header-menu li{
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width:700px) {
+  .header-buttons{
+    display: none;
+  }
+  
+  .header-menu{
+    display: none
+  }
+}

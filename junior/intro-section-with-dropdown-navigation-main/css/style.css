@@ -1,0 +1,12 @@
+/* Global */
+@import "./global/global.css";
+@import "./global/header.css";
+
+/* Utilities */
+@import "./utilities/colors.css";
+@import "./utilities/components.css";
+@import "./utilities/typography.css";
+@import "./utilities/form.css";
+
+/* Results */
+@import "./welcome/welcome.css";

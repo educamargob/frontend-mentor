@@ -1,0 +1,17 @@
+:root {
+  /* Primary */
+  --c-1: hsl(0, 0%, 98%);
+  --c-2: hsl(0, 0%, 41%);
+  --c-3: hsl(0, 0%, 8%);
+
+}
+
+.c-p1 {
+  color: var(--c-p1);
+}
+.c-p2 {
+  color: var(--c-p2);
+}
+.c-p3 {
+  color: var(--c-p3);
+}
