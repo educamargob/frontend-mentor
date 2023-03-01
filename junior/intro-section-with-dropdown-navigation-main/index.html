@@ -27,10 +27,28 @@
       </a>
       <nav aria-label="primary-menu">
         <ul class="header-menu">
-          <li class="dropdown-item">Features</li>
-          <li class="dropdown-item">Company</li>
-          <li><a href="./">Careers</a></li>
-          <li><a href="./">About</a></li>
+          <li class="dropdown-item">
+            <span>Features</span>
+            <ul class="dropdown-menu" id="features-menu">
+              <li><img src="./images/icon-todo.svg" alt=""><a href="./">TodoList</a></li>
+              <li><img src="./images/icon-calendar.svg" alt=""><a href="./">Calendar</a></li>
+              <li><img src="./images/icon-reminders.svg" alt=""><a href="./">Reminders</a></li>
+              <li><img src="./images/icon-planning.svg" alt=""><a href="./">Planning</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-item">
+            <span>Company</span>
+            <ul class="dropdown-menu">
+              <li><img src="./images/icon-todo.svg" alt=""><a href="./">TodoList</a></li>
+              <li><img src="./images/icon-calendar.svg" alt=""><a href="./">Calendar</a></li>
+              <li><img src="./images/icon-reminders.svg" alt=""><a href="./">Reminders</a></li>
+              <li><img src="./images/icon-planning.svg" alt=""><a href="./">Planning</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./"><span>Careers</span></a>
+          </li>
+          <li><a href="./"><span>About</span></a></li>
         </ul>
       </nav>
       <div class="header-buttons">
@@ -60,5 +78,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./js/dropdown/dropdown.js"></script>
 </body>
 </html>
