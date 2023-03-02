@@ -13,6 +13,7 @@
   border-radius: 14px;
   font-size: 1rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .outline-button:hover {
@@ -25,5 +26,12 @@
   .container {
     padding: 0;
     max-width: 450px;
+  }
+}
+
+@media (max-width: 700px){
+  .outline-button{
+    width: initial;
+    align-self: stretch;
   }
 }
