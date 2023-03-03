@@ -8,3 +8,5 @@
 @import "./utilities/typography.css";
 @import "./utilities/form.css";
 
+/* Intro */
+@import "./intro/intro.css";

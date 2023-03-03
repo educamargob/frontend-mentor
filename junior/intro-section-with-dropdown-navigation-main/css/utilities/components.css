@@ -1,20 +1,38 @@
 .container {
-  max-width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px 60px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
 }
-.outline-button {
-  width: 100%;
+
+.contrast-button {
+  background-color: var(--c-3);
+  border: 1px solid var(--c-3);
+  color: var(--c-1);
+  padding: 20px 30px;
+  border-radius: 14px;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  max-width: max-content;
+}
+.contrast-button:hover {
+  background-color: var(--c-1);
+  border: 1px solid var(--c-3);
+  color: var(--c-3);
+}
+
+.outline-button{
+  background-color: var(--c-1);
   border: 1px solid var(--c-2);
   color: var(--c-2);
   padding: 14px 21px;
   border-radius: 14px;
-  font-size: 1rem;
-  font-weight: 700;
   text-align: center;
+  font-weight: 600px;
+  max-width: max-content;
 }
+
 
 .outline-button:hover {
   border: 1px solid var(--c-3);
@@ -24,8 +42,14 @@
 
 @media (max-width: 1000px){
   .container {
-    padding: 0;
-    max-width: 450px;
+    padding: 10px;
+    max-width: 1000px;
+  }
+  .contrast-button {
+    padding: 14px 24px;
+  }
+  .menu-buttons .outline-button{
+    max-width: 100%;
   }
 }
 

@@ -1,21 +1,24 @@
 .font-1-xl {
-  font: 300 4rem/1.125 "Josefin Sans", sans-serif;
+  font: 300 4.875rem/1.125 'Epilogue', sans-serif;
   letter-spacing: 1.125rem;
   text-transform: uppercase;
 }
 
 .font-1-xl-b {
-  font: 600 4rem/1.25 "Josefin Sans", sans-serif;
-  letter-spacing: 1.125rem;
-  text-transform: uppercase;
+  font: 600 4.875rem 'Epilogue', sans-serif;
+  text-transform: capitalize;
+}
+
+.font-1-m {
+  font: 500 1.125rem/1.75 'Epilogue', sans-serif;
 }
 
 .font-1-s-b {
-  font: 600 1rem/1.25 "Josefin Sans", sans-serif;
+  font: 600 0.875rem 'Epilogue', sans-serif;
 }
 
 .font-1-s {
-  font: 400 0.8rem/1 "Josefin Sans", sans-serif;
+  font: 500 0.875rem 'Epilogue', sans-serif;
 }
 
 @media (max-width: 1200px) {
@@ -34,5 +37,17 @@
   }
   .font-1-xl {
     font-size: 2.5rem;
+  }
+  .font-1-m {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .font-1-xl-b {
+    font-size: 1.75rem;
+  }
+  .font-1-xl {
+    font-size: 1.75rem;
   }
 }
