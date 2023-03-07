@@ -1,0 +1,35 @@
+:root {
+  /* Primary */
+  --c-p1: hsl(176, 68%, 64%);
+  --c-p2: hsl(198, 60%, 50%);
+  --c-p3: hsl(360, 100%, 63%);
+
+  /* Secondary */
+  --c-s1: hsl(219, 30%, 18%);
+  --c-s2: hsl(217, 28%, 15%);
+  --c-s3: hsl(218, 28%, 13%);
+  --c-s4: hsl(216, 53%, 9%);
+
+  /* Text */
+  --c-t0: hsl(0, 0%, 100%);
+  --c-t1: hsl(220, 14%, 75%);
+}
+
+
+.c-p1 {
+  color: var(--c-p1);
+}
+.c-p2 {
+  color: var(--c-p2);
+}
+.c-p3 {
+  color: var(--c-p3);
+}
+
+.c-t0 {
+  color: var(--c-t0);
+}
+
+.c-t1 {
+  color: var(--c-t1);
+}

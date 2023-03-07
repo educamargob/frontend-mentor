@@ -1,0 +1,31 @@
+.intro-bg {
+    background: var(--c-s2);
+    position: relative;
+    padding-bottom: 160px;
+    z-index: 1;
+}
+
+.intro {
+    max-width: 720px;
+    text-align: center;
+}
+
+.intro-content h1{
+    margin-bottom: 54px;
+}
+
+.intro p {
+    max-width: 55ch;
+    margin: 0 auto 38px auto;
+}
+
+.curvy-backstyle {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    z-index: 0;
+}
+.curvy-backstyle img {
+    width: 100%;
+    
+}

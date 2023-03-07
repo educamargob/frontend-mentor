@@ -1,0 +1,31 @@
+body {
+  background: var(--c-s3);
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+  color: var(--c-t1);
+}
+
+h1,
+h3,
+h2,
+ul,
+p {
+  margin: 0px;
+}
+
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

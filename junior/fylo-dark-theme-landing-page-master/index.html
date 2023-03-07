@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
   
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
@@ -15,14 +19,32 @@
   </style>
 </head>
 <body>
-  Features
-  Team
-  Sign In
+  <header class="header-bg">
+    <div class="header container">
+      <a href="./"><img src="./images/logo.svg" alt="fylo logo"></a>
+      <nav aria-label="main-menu">
+        <ul class="header-menu font-1-s">
+          <li><a href="./">Features</a></li>
+          <li><a href="./">Team</a></li>
+          <li><a href="./">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="intro-bg">
+    <div class="intro container">
+      <div class="intro-image"><img src="./images/illustration-intro.png" alt="files ilustration"></div>
+      <div class="intro-content">
+        <h1 class="font-1-xx c-t0">All your files in one secure location, accessible anywhere.</h1>
+        <p class="font-2-x">Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
+        <a href="./" class="button font-1-s-b c-t0">Get Started</a>
+      </div>
+    </div>
+    <div class="curvy-backstyle"><img src="./images/bg-curvy-desktop.svg" alt=""></div>
+  </main>
+  <footer></footer>
 
-  All your files in one secure location, accessible anywhere.
 
-  Fylo stores all your most important files in one secure location. Access them wherever 
-  you need, share and collaborate with friends family, and co-workers.
 
   Get Started
 

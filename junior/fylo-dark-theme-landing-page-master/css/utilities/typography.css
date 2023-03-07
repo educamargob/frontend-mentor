@@ -1,0 +1,44 @@
+.font-1-xx {
+  font: 700 2.62rem/1.125 'Raleway', sans-serif;
+}
+
+.font-1-x {
+  font: 700 2.5rem/1.125 'Raleway', sans-serif;
+}
+
+.font-1-m {
+  font: 700 2rem/1.125 'Raleway', sans-serif;  
+}
+
+.font-1-s {
+  font: 400 1rem/1.125 'Raleway', sans-serif;  
+}
+
+.font-1-s-b {
+  font: 700 1rem/1.125 'Raleway', sans-serif;  
+}
+
+.font-2-x {
+  font: 400 1.25rem/1.125 'Open Sans', sans-serif;  
+}
+
+.font-2-m {
+  font: 400 1rem/1.125 'Open Sans', sans-serif;  
+}
+
+.font-2-ml {
+  font: 400 0.875rem/1.125 'Open Sans', sans-serif;  
+}
+
+.font-2-ml-s {
+  font: 400 0.875rem/1.125 'Open Sans', sans-serif; 
+  letter-spacing: 4%;
+}
+
+.font-2-s-b {
+  font: 700 0.75rem 'Open Sans', sans-serif;
+}
+
+.font-2-s {
+  font: 400 0.625rem 'Open Sans', sans-serif;
+}
