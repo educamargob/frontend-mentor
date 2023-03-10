@@ -1,0 +1,50 @@
+.review::before {
+  content: "";
+  width: 54px;
+  height: 44px;
+  display: block;
+  position: absolute;
+  background-image: url("../../images/bg-quotes.png");
+  left: 49px;
+  z-index: 1;
+}
+
+.review{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.review-item {
+  background-color: var(--c-s1);
+  padding: 40px 24px 24px 24px;
+  border-radius: 5px;
+  box-shadow: 12px 12px 0 hsla(217, 27%, 15%, 0.527);
+  box-sizing: border-box;
+  max-width: 440px;
+}
+
+.review-item blockquote {
+  margin-bottom: 24px;
+}
+
+.review-profile{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.review-profile span{
+  display: block;
+}
+
+.profile-image{
+  width: 32px;
+}
+
+.profile-image img {
+  border-radius: 50%;
+}
+

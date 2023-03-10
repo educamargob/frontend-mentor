@@ -1,31 +1,61 @@
 .intro-bg {
-    background: var(--c-s2);
-    position: relative;
-    padding-bottom: 160px;
-    z-index: 1;
+  background: var(--c-s2);
+  background-image: url("../../images/bg-curvy-desktop.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom; 
+  box-shadow: inset 0 -1px var(--c-s3);
 }
 
 .intro {
-    max-width: 720px;
-    text-align: center;
+  max-width: 720px;
+  text-align: center;
+  padding-bottom: 130px;
 }
 
 .intro-content h1{
-    margin-bottom: 54px;
+  margin-bottom: 24px;
 }
 
 .intro p {
-    max-width: 55ch;
-    margin: 0 auto 38px auto;
+  max-width: 55ch;
+  margin: 0 auto 38px auto;
 }
 
-.curvy-backstyle {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    z-index: 0;
+.intro .button {
+  margin: 0 auto;
 }
-.curvy-backstyle img {
-    width: 100%;
-    
+
+@media (max-width: 700px) {
+  .intro-bg {
+    background: var(--c-s2);
+    position: relative;
+    padding-bottom: 40px;
+  }
+  .intro {
+    max-width: 540px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 0;
+  }
+  .intro-content h1{
+    margin-bottom: 12px;
+  }
+  .intro p {
+    margin-bottom: 30px;
+  }
+  .intro-bg {
+    background-image: url("../../images/bg-curvy-mobile.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom 140px right 0px; 
+    box-shadow: inset 0 -140px var(--c-s3);
+  }
+}
+
+@media (max-width: 400px) {
+  .intro-bg {
+    background-position: bottom 200px right 0px; 
+    box-shadow: inset 0 -200px var(--c-s3);
+  }
 }

@@ -1,19 +1,49 @@
 .container {
   padding: 30px 60px;
-  max-width: 1300px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .button {
+  display: block;
   background-color: var(--c-p2);
   padding: 20px 98px;
   border-radius: 28px;
+  width: max-content;
 }
 
 .button:hover {
   background-color: var(--c-p1);
 }
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  width: max-content;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+  background: var(--c-p1);
+}
+
+.link:hover{
+  color: var(--c-t1);
+}
+.link:hover::after{
+  background: var(--c-t1);
+}
+
 
 @media (max-width: 1000px){
   .container {

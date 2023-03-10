@@ -8,4 +8,7 @@
 @import "./utilities/typography.css";
 
 /* Home */
-@import "./home/intro.css"
+@import "./home/intro.css";
+@import "./home/benefits.css";
+@import "./home/productive.css";
+@import "./home/review.css";
