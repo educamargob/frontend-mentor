@@ -82,7 +82,7 @@
       </blockquote>
       <div class="review-profile">
         <div class="profile-image"><img src="./images/profile-1.jpg" alt=""></div>
-        <div>
+        <div class="profile-info">
           <span class="font-2-s-b c-t0">Satish Patel</span>
           <span class="font-2-s">Founder & CEO, Huddle</span>
         </div>
@@ -95,7 +95,7 @@
       </blockquote>
       <div class="review-profile">
         <div class="profile-image"><img src="./images/profile-2.jpg" alt=""></div>
-        <div>
+        <div class="profile-info">
           <span class="font-2-s-b c-t0">Bruce McKenzie</span>
           <span class="font-2-s">Founder & CEO, Huddle</span>
         </div>
@@ -108,52 +108,72 @@
       </blockquote>
       <div class="review-profile">
         <div class="profile-image"><img src="./images/profile-3.jpg" alt=""></div>
-        <div>
+        <div class="profile-info">
           <span class="font-2-s-b c-t0">Iva Boyd</span>
           <span class="font-2-s">Founder & CEO, Huddle</span>
         </div>
       </div>
     </div>
   </section>
-  <footer></footer>
-
-  
-
-  
-  
-
-  
-
-  
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
-  questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-  dolore magna aliqua
-
-  +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+  <section class="access-bg">
+    <div class="access container">
+      <h2 class="font-1-m c-t0">Get early access today</h2>
+      <p class="font-2-m">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+      <form class="access-form" action="./" method="post">
+        <label for="email">email</label>
+        <input class="font-2-ml" type="text" name="email" id="email" placeholder="email@example.com">
+        <button class="button" type="submit">Get Started for Free</button>
+        <span class="form-errors c-p3 font-2-s-b">Please enter a valid email address</span>
+      </form>
+    </div>
+  </section>
+  <footer class="footer-bg">
+    <div class="footer container">
+      <div class="logo"><a href="./"><img src="./images/logo.svg" alt="fylo logo"></a></div>
+      <div class="footer-info font-2-m">
+        <div class="footer-contact">
+          <div class="info-item location">
+            <img src="./images/icon-location.svg" alt="location">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+          <div>
+            <div class="info-item">
+              <img src="./images/icon-phone.svg" alt="phone">
+              <span>+1-543-123-4567</span>
+            </div>
+            <div class="info-item">
+              <img src="./images/icon-email.svg" alt="email">
+              <span>example@fylo.com</span>
+            </div>
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <ul class="nav-items">
+            <li><a href="./">About Us</a></li>
+            <li><a href="./">Jobs</a></li>
+            <li><a href="./">Press</a></li>
+            <li><a href="./">Blog</a></li>
+          </ul>
+          <ul class="nav-items">
+            <li><a href="./">Contact Us</a></li>
+            <li><a href="./">Terms</a></li>
+            <li><a href="./">Privacy</a></li>
+          </ul>
+        </nav>
+        <div class="footer-social">
+          <a class="social-item" href="./"><img src="./images/logo-facebook.svg" alt="facbook"></a>
+          <a class="social-item" href="./"><img src="./images/logo-twitter.svg" alt="twitter"></a>
+          <a class="social-item" href="./"><img src="./images/logo-instagram.svg" alt="instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Edu Camargo</a>.
+      </p>
+    </div>
   </footer>
+  <script src="./js/validate.js"></script>
 </body>
 </html>

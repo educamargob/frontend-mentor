@@ -6,11 +6,15 @@
 }
 
 .button {
-  display: block;
+  cursor: pointer;
+  display: inline-block;
   background-color: var(--c-p2);
   padding: 20px 98px;
   border-radius: 28px;
+  border: none;
   width: max-content;
+  font: 700 1.25rem/1.125 'Raleway', sans-serif;
+  color: var(--c-t0);
 }
 
 .button:hover {

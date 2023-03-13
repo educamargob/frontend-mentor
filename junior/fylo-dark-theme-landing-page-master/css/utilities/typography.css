@@ -27,7 +27,7 @@
 }
 
 .font-2-ml {
-  font: 400 0.875rem/1.5 'Open Sans', sans-serif;  
+  font: 400 0.875rem/1.75 'Open Sans', sans-serif;  
 }
 
 .font-2-ml-s {
@@ -36,7 +36,7 @@
 }
 
 .font-2-s-b {
-  font: 700 0.75rem 'Open Sans', sans-serif;
+  font: 700 0.76rem 'Open Sans', sans-serif;
 }
 
 .font-2-s {
@@ -57,6 +57,9 @@
   .font-2-x {
     font-size: 1rem; 
   }
+  .font-2-ml {
+    font-size: 0.75rem;  
+  }
 }
 
 @media (max-width: 500px) {
@@ -68,5 +71,8 @@
   }
   .font-2-x {
     font-size: 0.875rem; 
+  }
+  .font-2-ml {
+    font-size: 0.685rem;  
   }
 }

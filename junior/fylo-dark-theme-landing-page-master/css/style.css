@@ -1,6 +1,7 @@
 /* Global */
 @import "./global/global.css";
 @import "./global/header.css";
+@import "./global/footer.css";
 
 /* Utilities */
 @import "./utilities/colors.css";
@@ -12,3 +13,5 @@
 @import "./home/benefits.css";
 @import "./home/productive.css";
 @import "./home/review.css";
+@import "./home/access.css";
+

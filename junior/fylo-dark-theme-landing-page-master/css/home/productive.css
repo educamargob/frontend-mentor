@@ -4,6 +4,9 @@
   align-items: center;
   justify-content: center;
   gap: 52px;
+}
+
+.productive.container {
   padding-bottom: 130px;
 }
 
