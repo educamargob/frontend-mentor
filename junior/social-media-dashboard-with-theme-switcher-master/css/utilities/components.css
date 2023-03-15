@@ -1,0 +1,152 @@
+.container {
+  padding: 30px 60px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+@media (max-width: 1000px) {
+  .dashboard {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .dashboard {
+    margin: 0 auto;
+    max-width: 500px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.card {
+  background-color: var(--c-t2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 28px 0;
+  border-top: 5px solid;
+  position: relative;
+  border-radius: 5px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px 5px 0 0 ;
+}
+
+.card-sm {
+  background-color: var(--c-t2);
+  padding: 28px 0;
+  border-radius: 5px;
+}
+
+.card-sm > div {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.card-sm > div img {
+  justify-self: end;
+}
+
+
+.theme {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.c-justify {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* Switch checkbox */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--c-to);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--c-t2);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  color-scheme: dark-theme;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* Switch checkbox */
+
+@media (max-width: 1000px){
+  .container {
+    padding: 32px;
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 800px){
+  .container {
+    padding: 24px;
+  }
+}

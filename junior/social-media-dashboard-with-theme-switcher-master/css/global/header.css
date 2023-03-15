@@ -1,0 +1,33 @@
+.header-bg {
+  background: var(--c-t1);
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width:600px){
+  .header {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .header.container {
+    padding-bottom: 24px;
+  }
+  .theme {
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 20px;
+  }
+  .theme::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--c-t3);
+    position: absolute;
+    top: 0;
+  }
+}

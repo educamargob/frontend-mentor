@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Social media dashboard with theme switcher</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="header-bg">
+    <div class="header container c-t0">
+      <div class="tittle">
+        <h1 class="font-1-xs">Social Media Dashboard</h1>
+        <span class="c-t3 font-1-ms">Total Followers: 23,004</span>
+      </div>
+      <div class="theme c-t3 font-1-ms">
+        <label for="theme">Dark Mode</label>
+          <label class="switch">
+            <input type="checkbox" name="theme" id="rd-theme">
+            <span class="slider round"></span>
+          </label>
+      </div>
+    </div>
+  </header>
+  <main class="total-bg">
+    <section class="total container">
+      <ul class="social-total dashboard">
+        <li class="card facebook">
+          <span class="social-name font-1-s c-justify">
+            <img src="./images/icon-facebook.svg" alt="facebook">
+            @nathanf
+          </span>
+          <div class="social-count">
+            <span class="font-1-xx c-t0">1987</span>
+            <span class="font-1-s-l">Followers</span>
+          </div>
+          <span class="font-1-s c-p1 c-justify">
+            <img src="./images/icon-up.svg" alt="">
+            12 Today
+          </span>
+        </li>
+        <li class="card twitter">
+          <span class="social-name font-1-s c-justify">
+            <img src="./images/icon-twitter.svg" alt="twitter">
+            @nathanf
+          </span>
+          <div class="social-count">
+            <span class="font-1-xx c-t0">1044</span>
+            <span class="font-1-s-l">Followers</span>
+          </div>
+          <span class="font-1-s c-p1 c-justify">
+            <img src="./images/icon-up.svg" alt="">
+            99 Today
+          </span>
+        </li>
+        <li class="card instagram">
+          <span class="social-name font-1-s c-justify">
+            <img src="./images/icon-instagram.svg" alt="instagram">
+            @realnathanf
+          </span>
+          <div class="social-count">
+            <span class="font-1-xx c-t0">11k</span>
+            <span class="font-1-s-l">Followers</span>
+          </div>
+          <span class="font-1-s c-p1 c-justify">
+            <img src="./images/icon-up.svg" alt="">
+            1099 Today
+          </span>
+        </li>
+        <li class="card youtube">
+          <span class="social-name font-1-s c-justify">
+            <img src="./images/icon-youtube.svg" alt="youtube">
+            @nathanf
+          </span>
+          <div class="social-count">
+            <span class="font-1-xx c-t0">8239</span>
+            <span class="font-1-s-l">Subscribers</span>
+          </div>
+          <span class="font-1-s c-p2 c-justify">
+            <img src="./images/icon-down.svg" alt="">
+            144 Today
+          </span>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <section class="overview-bg">
+    <div class="overview container">
+      <h2 class="font-1-m c-t0">Overview - Today</h2>
+      <ul class="overview-today dashboard">
+        <li class="card-sm">
+          <div>
+            <h3 class="font-1-ms">Page Views</h3>
+            <img src="./images/icon-facebook.svg" alt="facebook">
+            <span class="font-1-x c-t0">87</span>
+            <span class="font-1-s c-p1 c-justify">
+              <img src="./images/icon-up.svg" alt="">
+              3%
+            </span>
+          </div>
+        </li>
+        <li class="card-sm">
+          <div>
+            <h3 class="font-1-ms">Likes</h3>
+            <img src="./images/icon-facebook.svg" alt="facebook">
+            <span class="font-1-x c-t0">52</span>
+            <span class="font-1-s c-p2 c-justify">
+              <img src="./images/icon-down.svg" alt="">
+              2%
+            </span>
+          </div>
+        </li>
+        <li class="card-sm">
+          <div>
+            <h3 class="font-1-ms">Likes</h3>
+            <img src="./images/icon-instagram.svg" alt="instagram">
+            <span class="font-1-x c-t0">5462</span>
+            <span class="font-1-s c-p1 c-justify">
+              <img src="./images/icon-up.svg" alt="">
+              2257%
+            </span>
+          </div>
+        </li>
+        <li class="card-sm">
+          <div>
+            <h3 class="font-1-ms">Profile Views</h3>
+            <img src="./images/icon-instagram.svg" alt="instagram">
+            <span class="font-1-x c-t0">52k</span>
+            <span class="font-1-s c-p1 c-justify">
+              <img src="./images/icon-up.svg" alt="">
+              1375%
+            </span>
+          </div>
+        </li>
+        <li class="card-sm">
+          <div>
+            <h3 class="font-1-ms">Retweets</h3>
+            <img src="./images/icon-twitter.svg" alt="twitter">
+            <span class="font-1-x c-t0">117</span>
+            <span class="font-1-s c-p1 c-justify">
+              <img src="./images/icon-up.svg" alt="">
+              303%
+            </span>
+          </div>
+        </li>
+        <li class="card-sm">
+          <div>
+            <h3 class="font-1-ms">Likes</h3>
+            <img src="./images/icon-twitter.svg" alt="twitter">
+            <span class="font-1-x c-t0">507</span>
+            <span class="font-1-s c-p1 c-justify">
+              <img src="./images/icon-up.svg" alt="">
+              553%
+            </span>
+          </div>
+        </li>
+        <li class="card-sm">
+          <div>
+            <h3 class="font-1-ms">Likes</h3>
+            <img src="./images/icon-youtube.svg" alt="youtube">
+            <span class="font-1-x c-t0">107</span>
+            <span class="font-1-s c-p2 c-justify">
+              <img src="./images/icon-down.svg" alt="">
+              19%
+            </span>
+          </div>
+        </li>
+        <li class="card-sm">
+          <div>
+            <h3 class="font-1-ms">Total Views</h3>
+            <img src="./images/icon-youtube.svg" alt="youtube">
+            <span class="font-1-x c-t0">1407</span>
+            <span class="font-1-s c-p2 c-justify">
+              <img src="./images/icon-down.svg" alt="">
+              12%
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Edu Camargo</a>.
+  </div>
+  <script src="./js/changeTheme.js"></script>
+</body>
+</html>

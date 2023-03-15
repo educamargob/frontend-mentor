@@ -1,0 +1,56 @@
+.font-1-xx {
+  font: 700 3.5rem/1.125 'Inter', sans-serif;
+}
+.font-1-x {
+  font: 700 2rem/1.125 'Inter', sans-serif;
+}
+.font-1-xs {
+  font: 700 1.75rem/1.125 'Inter', sans-serif;
+}
+.font-1-m {
+  font: 700 1.5rem/1.125 'Inter', sans-serif;
+}
+.font-1-ms {
+  font: 700 0.875rem/1.125 'Inter', sans-serif;
+}
+.font-1-s {
+  font: 700 0.75rem/1.125 'Inter', sans-serif;
+}
+.font-1-s-l {
+  font: 400 0.75rem/1.125 'Inter', sans-serif;
+  letter-spacing: 0.44rem;
+  margin-right: -0.44rem;
+  text-transform: uppercase;
+}
+
+
+
+/* @media (max-width: 700px) {
+  .font-1-xx {
+    font-size: 2rem;
+  }
+  .font-1-x {
+    font-size: 1.75rem;
+  }
+  .font-1-s {
+    font-size: 0.875rem;
+  }
+  .font-2-x {
+    font-size: 1rem; 
+  }
+  .font-2-ml {
+    font-size: 0.75rem;  
+  }
+}
+*/
+@media (max-width: 500px) {
+  .font-1-xs {
+    font-size: 1.25rem;
+  }
+  .font-2-x {
+    font-size: 0.875rem; 
+  }
+  .font-2-ml {
+    font-size: 0.685rem;  
+  }
+} 

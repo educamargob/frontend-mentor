@@ -1,0 +1,33 @@
+body {
+  background: var(--c-t4);
+  margin: 0px;
+  font-family: 'Inter', sans-serif;
+  color: var(--c-t3);
+}
+
+h1,
+h3,
+h2,
+ul,
+blockquote,
+p {
+  margin: 0px;
+}
+
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+

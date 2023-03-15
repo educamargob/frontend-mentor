@@ -1,0 +1,13 @@
+/* Global */
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/* Utilities */
+@import "./utilities/colors.css";
+@import "./utilities/components.css";
+@import "./utilities/typography.css";
+
+/* Dashboard */
+@import "./dashboard/social/social-total.css";
+@import "./dashboard/social/social-overview.css";
