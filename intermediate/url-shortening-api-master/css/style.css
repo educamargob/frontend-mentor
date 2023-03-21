@@ -1,0 +1,16 @@
+/* Global */
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/* Utilities */
+@import "./utilities/colors.css";
+@import "./utilities/components.css";
+@import "./utilities/typography.css";
+@import "./utilities/form.css";
+
+/* Home */
+@import "./home/introduction.css";
+@import "./home/shorten.css";
+@import "./home/statistics.css";
+@import "./home/boost.css";

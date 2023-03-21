@@ -1,0 +1,87 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu.active {
+  
+}
+
+.menu-button {
+  display: none;
+}
+
+.primary-menu {
+  display: flex;
+  gap: 44px;
+  align-items: center;
+}
+
+.menu-options {
+  display: flex;
+  gap: 28px;
+}
+
+.menu-options a:hover {
+  color: var(--c-n4);
+}
+
+a:hover {
+  color: var(--c-n4);
+}
+
+.menu-buttons {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  .primary-menu {
+    justify-content: space-between;
+    position: relative;
+  }
+  .menu.active {
+    display: flex;
+    color: var(--c-n0);
+    text-align: center;
+    gap: 40px;
+    padding: 20px;
+    flex-direction: column;
+    background-color: var(--c-2);
+    position: absolute;
+    max-width: 80vw;
+    top: 53px;
+    z-index: 1;
+    right: auto;
+    left: auto;
+  }
+  .menu-buttons{
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  
+  .menu-options{
+    gap: 24px;
+    flex-direction: column;
+    justify-self: end;
+  }
+
+  .dropdown-menu {
+    position: initial;
+    padding: 0 0 0 20px;
+    gap: 18px;
+    margin-top: 20px;
+  }
+  .dropdown-menu li {
+    display: flex;
+  }
+}

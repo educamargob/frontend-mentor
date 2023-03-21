@@ -1,0 +1,27 @@
+form {
+  position: relative;
+}
+
+form label {
+  display: none;
+}
+
+form input {
+  padding-left: 32px;
+  border-radius: 5px;
+  border: none;
+}
+
+form input::placeholder {
+  color: var(--c-n2);
+}
+
+form .button {
+  border-radius: 5px;
+}
+
+.form-error {
+  position: absolute;
+  bottom: -26px;
+  display: none;
+}

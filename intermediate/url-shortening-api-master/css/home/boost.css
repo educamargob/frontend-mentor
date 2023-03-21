@@ -1,0 +1,16 @@
+.boost-bg {
+  background-color: var(--c-2);
+  background-image: url(../../images/bg-boost-desktop.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.boost {
+  padding: 56px 0;
+  text-align: center;
+}
+
+.boost .button {
+  margin: 0 auto;
+  margin-top: 32px;
+}

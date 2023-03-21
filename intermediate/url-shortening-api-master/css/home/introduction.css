@@ -1,0 +1,11 @@
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: relative;
+}
+
+.introduction-text p{
+  max-width: 40ch;
+  margin-bottom: 36px;  
+}

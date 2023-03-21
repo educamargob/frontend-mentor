@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/6ac343565f.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="header container font-1-s c-n2">
+    <nav class="primary-menu" aria-label="primary-menu">
+      <a href="./">
+        <img src="./images/logo.svg" alt="shortly logo">
+      </a>
+      <div class="menu-button"><img src="./images/icon-menu.svg" alt=""></div>
+      <div class="menu active">
+        <ul class="menu-options">
+          <li><a href="./">Features</a></li>
+          <li><a href="./">Pricing</a></li>
+          <li><a href="./">Resources</a></li>
+        </ul>
+        <div class="menu-buttons">
+          <a href="./">Login</a>
+          <a class="button-sm" href="./">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+    </div>
+  </header>
+  <main>
+    <section class="introduction-bg">
+      <div class="introduction container">
+        <div class="introduction-text">
+          <h1 class="font-1-xx">More than just shorter links</h1>
+          <p class="font-1-mx c-n2">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+          <a class="button" href="">Get Started</a>
+        </div>
+        <div class="introduction-image">
+          <img src="./images/illustration-working.svg" alt="working ilustration">
+        </div>
+      </div>
+    </section>
+    <section class="shorten-bg">
+      <div class="shorten container">
+        <div class="shorten-actions">
+          <form action="./">
+            <label for="link">Link</label>
+            <input class="font-1-m" type="text" id="link" name="link" placeholder="Shorten a link here...">
+            <button class="button" type="submit">Shorten It!</button>
+            <span class="form-error font-1-s c-3">Please add a link</span>
+          </form>
+        </div>
+        <ul class="shorten-items">
+          <li class="shorten-item font-1-m">
+            <span>https://www.frontendmentor.io</span>
+            <div class="link">
+              <span class="c-1">https://rel.ink/k4lKyk</span>
+              <button class="button copy">Copy</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="statistics-bg">
+      <div class="statistics container">
+        <h2 class="font-1-x">Advanced Statistics</h2>
+        <p class="font-1-sx c-n2">Track how your links are performing across the web with our advanced statistics dashboard</p>
+        <ul class="statistics-cards">
+          <li class="statistics-card">
+            <div class="card-logo"><img src="./images/icon-brand-recognition.svg" alt="recognition logo"></div>
+            <h3 class="font-1-mx-b">Brand Recognition</h3>
+            <p class="font-1-s c-n2">Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+          </li>
+          <li class="statistics-card">
+            <div class="card-logo"><img src="./images/icon-detailed-records.svg" alt="records logo"></div>
+            <h3 class="font-1-mx-b">Detailed Records</h3>
+            <p class="font-1-s c-n2">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+          </li>
+          <li class="statistics-card">
+            <div class="card-logo"><img src="./images/icon-fully-customizable.svg" alt="recognition logo"></div>
+            <h3 class="font-1-mx-b">Fully Customizable</h3>
+            <p class="font-1-s c-n2">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="boost-bg">
+      <div class="boost">
+        <h2 class="font-1-x c-n0">Boost your links today</h2>
+        <button class="button">Get Started</button>
+      </div>
+    </section>
+    <footer class="footer-bg">
+      <div class="footer container c-n2">
+        <div class="logo"><img src="./images/logo-footer.svg" alt="shortly logo"></div>
+        <div class="footer-list features">
+          <h3 class="font-1-s-b c-n0">Features</h3>
+          <ul class="features-list font-1-s">
+            <a href="./">
+              <li class="features-item">Link Shortening</li>
+            </a>
+            <a href="./"><li class="features-item">Branded Links</li></a>
+            <a href="./"><li class="features-item">Analytics</li></a>
+          </ul>
+        </div>
+        <div class="footer-list resources">
+          <h3 class="font-1-s-b c-n0">Resources</h3>
+          <ul class="resources-list font-1-s">
+            <a href="./"><li class="resources-item">Blog</li></a>
+            <a href="./"><li class="resources-item">Developers</li></a>
+            <a href="./"><li class="resources-item">Support</li></a>
+          </ul>
+        </div>
+        <div class="footer-list company">
+          <h3 class="font-1-s-b c-n0">Company</h3>
+          <ul class="company-list font-1-s">
+            <a href="./"><li class="company-item">About</li></a>
+            <a href="./"><li class="company-item">Our Team</li></a>
+            <a href="./"><li class="company-item">Careers</li></a>
+            <a href="./"><li class="company-item">Contact</li></a>
+          </ul>
+        </div>
+        <ul class="social">
+          <a href="./">
+            <li class="social-item"><i class="fa-brands fa-square-facebook fa-xl"></i></li>
+          </a>
+          <a href="./">
+            <li class="social-item"><i class="fa-brands fa-twitter fa-xl"></i></li>
+          </a>
+          <a href="./">
+            <li class="social-item"><i class="fa-brands fa-pinterest fa-xl"></i></li>
+          </a>
+          <a href="./">
+            <li class="social-item"><i class="fa-brands fa-instagram fa-xl"></i></li>
+          </a>
+        </ul>
+      </div>
+    </footer>
+  </main>
+  <div class="attribution c-n1">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Edu Camargo</a>.
+  </div>
+</body>
+</html>
