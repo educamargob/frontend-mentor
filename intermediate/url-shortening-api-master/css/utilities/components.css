@@ -23,6 +23,22 @@
   background-color: hsl(180, 81%, 69%);
 }
 
+.button-sm {
+  display: block;
+  background-color: var(--c-1);
+  color: var(--c-n0);
+  padding: 8px 22px;
+  border-radius: 30px;
+  text-align: center;
+  max-width: max-content;
+  font: 700 0.9375rem/1.7 'Poppins', sans-serif;
+}
+
+.button-sm:hover {
+  color: var(--c-n0);
+  background-color: hsl(180, 81%, 69%);
+}
+
 @media (max-width: 1000px){
   .container {
     padding: 20px;
