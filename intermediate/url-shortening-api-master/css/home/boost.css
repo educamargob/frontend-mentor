@@ -14,3 +14,9 @@
   margin: 0 auto;
   margin-top: 32px;
 }
+
+@media (max-width: 1000px) {
+  .boost-bg {
+    background-image: url(../../images/bg-boost-mobile.svg);
+  }
+}

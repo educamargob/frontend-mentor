@@ -7,9 +7,17 @@ form label {
 }
 
 form input {
+  padding: 14px 36px;
   padding-left: 32px;
   border-radius: 5px;
   border: none;
+  border-width: 2px;
+  border: solid 2px hsla(0, 0%, 100%, 0);
+
+}
+
+input.error {
+  border: solid 2px var(--c-3);
 }
 
 form input::placeholder {
@@ -22,6 +30,34 @@ form .button {
 
 .form-error {
   position: absolute;
-  bottom: -26px;
+  bottom: -28px;
   display: none;
+  max-height: max-content;
+}
+
+.form-error.active {
+  display: block;
+}
+
+@media (max-width: 800px){
+  .shorten-actions {
+    background-image: url(../../images/bg-shorten-mobile.svg);
+  }
+  form input {
+    padding: 10px 24px;
+    padding-left: 14px;
+  }
+  form .button {
+    margin-top: 16px;
+    max-width: initial;
+  }
+  .form-error {
+    display: none;
+    grid-row: 2;
+    top: -18px;
+  } 
+  .form-error.font-1-s {
+    font-size: .75rem
+  }
+
 }

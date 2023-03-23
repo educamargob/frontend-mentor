@@ -37,7 +37,7 @@
   padding-top: 72px;
   position: relative;
   max-width: 380px;
-  max-height: 141px;
+  height: max-content;
   border-radius: 5px;
 }
 
@@ -65,4 +65,43 @@
 
 .statistics-card > p {
   max-width: 30ch;
+}
+
+@media (max-width:1100px) {
+  .statistics-card {
+    padding: 24px 24px;
+    padding-top: 72px;
+  }
+}
+
+@media (max-width:900px) {
+  .statistics-cards {
+    grid-template-columns: 1fr;
+    gap: 80px;
+    justify-items: center;
+  }
+  .statistics-card {
+    text-align: center;
+    max-height: initial;
+  }
+  .card-logo {
+    top: -40px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .statistics-cards::before {
+    height: 100%;
+    width: 8px;
+    background-color: var(--c-1);
+    top: 0;
+  }
+  .statistics-card:nth-child(2) {
+    margin-top: 0;
+  }
+  
+  .statistics-card:nth-child(3) {
+    margin-top: 0;
+  }
 }

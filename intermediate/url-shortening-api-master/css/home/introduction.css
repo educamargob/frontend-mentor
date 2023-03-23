@@ -5,7 +5,38 @@
   position: relative;
 }
 
+.introduction-text h1 {
+  margin-bottom: 12px;
+}
+
 .introduction-text p{
   max-width: 40ch;
   margin-bottom: 36px;  
+}
+
+@media (max-width: 1000px) {
+  .introduction {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .introduction-text h1 {
+    margin-bottom: 6px;
+  }
+  .introduction-text p{
+    max-width: 40ch;
+    margin-bottom: 24px;  
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .introduction-text .button {
+   margin-left: auto;
+   margin-right: auto; 
+  }
+  .introduction-image {
+    grid-row: 1;
+    margin-bottom: 24px;
+  }
+  .introduction-image img{
+    margin-left: auto;
+  }
 }
