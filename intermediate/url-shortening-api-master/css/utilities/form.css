@@ -13,8 +13,8 @@ form input {
   border: none;
   border-width: 2px;
   border: solid 2px hsla(0, 0%, 100%, 0);
-
 }
+
 
 input.error {
   border: solid 2px var(--c-3);
@@ -60,4 +60,10 @@ form .button {
     font-size: .75rem
   }
 
+}
+
+@media (max-width: 400px){
+  form {
+    display: block;
+  }
 }

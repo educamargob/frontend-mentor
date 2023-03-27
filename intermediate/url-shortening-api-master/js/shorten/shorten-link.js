@@ -30,12 +30,34 @@ function createShortenItem(shortLink, fullLink){
 
   shorten.appendChild(shortenLink);
   shorten.appendChild(shortenBtn);
-  submitBtn.innerText = 'Shorten It!';
-  submitBtn.disabled = false;
-  submitBtn.style.backgroundColor = "var(--c-1)";
-  submitBtn.style.cursor = "pointer";
+  statusLink("ok");
   const itemsBtn = document.querySelectorAll('.shorten-item button');
   itemsBtn.forEach(copyEvent);
+}
+
+
+function statusLink(status) {
+  if (status == "ok"){
+    submitBtn.innerText = 'Shorten It!';
+    submitBtn.disabled = false;
+    submitBtn.style.backgroundColor = "var(--c-1)";
+    submitBtn.style.cursor = "pointer";
+    link.classList.remove('error');
+    error.classList.remove('active');
+  }else if(status == "wait"){
+    submitBtn.innerText = 'Generating...';
+    submitBtn.disabled = true;
+    submitBtn.style.backgroundColor = "var(--c-n2)";
+    submitBtn.style.cursor = "wait";
+  }else if (status == "error") {
+    submitBtn.innerText = 'Error!';
+    submitBtn.disabled = true;
+    submitBtn.style.backgroundColor = "var(--c-3)";
+    submitBtn.style.cursor = "not-allowed";
+    link.classList.add('error');
+    error.classList.add('active');
+    error.innerText = "Please add a valid link";
+  };
 }
 
 async function shortenLink(link) {
@@ -44,8 +66,12 @@ async function shortenLink(link) {
   const url = `https://api.shrtco.de/v2/shorten?url=${fullLink}`
   const data = await fetch(url);
   const resp = await data.json();
-  const shortLink = resp.result.full_short_link;
-  createShortenItem(shortLink, fullLink);
+  if(!resp.ok){
+    statusLink("error");
+  }else {
+    const shortLink = resp.result.full_short_link;
+    createShortenItem(shortLink, fullLink);
+  }
 }
 
 
@@ -53,23 +79,15 @@ submitBtn.addEventListener('click', function (event) {
   //Validate the URL 
   event.preventDefault();
   const value = link.value;
-  // Pattern found in https://stackoverflow.com/questions/1410311/regular-expression-for-url-validation-in-javascript Thank You
-  let pattern = /^(ftp|http|https):\/\/[^ "]+$/;
-  if(!pattern.test(value)){
-      link.classList.add('error');
-      error.classList.add('active');
-      error.innerText = "Please provide a valid link";
+  if(!value){
+      statusLink("error");
   }else{
-      submitBtn.innerText = 'Generating...';
-      submitBtn.disabled = true;
-      submitBtn.style.backgroundColor = "var(--c-n2)";
-      submitBtn.style.cursor = "wait";
+      statusLink("wait");
       shortenLink(link);
       link.value = '';
   }
 });
 
 link.addEventListener("keyup", function () {
-  link.classList.remove('error');
-  error.classList.remove('active');
+  statusLink("ok");
 });
