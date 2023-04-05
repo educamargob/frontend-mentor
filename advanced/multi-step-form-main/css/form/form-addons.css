@@ -1,0 +1,60 @@
+.form-check .option {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border: 1px solid var(--c-n1);
+  cursor: pointer;
+  position: relative;
+}
+
+.price {
+  margin-left: auto;
+}
+
+.form-check .option::before {
+  content: "";
+  display: block;
+  background-color: var(--c-n4);
+  border: 1px solid var(--c-n1);
+  width: 20px;
+  height: 20px;
+}
+
+.addon-description h2{
+  margin-bottom: 12px;
+}
+
+.form-check:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.form-check .option:hover {
+  background-color: var(--c-n2);
+}
+
+.plan .option .price {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-check input[type=checkbox]{
+  display: none;
+}
+
+.form-check input[type=checkbox]:checked + .option{
+  background-color: var(--c-n2);
+  border-color: var(--c-2);
+}
+
+.form-check input[type=checkbox]:checked + .option::before{
+  background-color: var(--c-2);
+  border-color: var(--c-2);
+  border-radius: 3px;
+  background-image: url(../../assets/images/icon-checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}

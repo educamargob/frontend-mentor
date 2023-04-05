@@ -1,0 +1,44 @@
+
+.side-bar {
+  background: url(../../assets/images/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+  padding: 40px 32px;
+  border-radius:12px;
+  box-sizing: border-box;
+  max-width: 272px;
+}
+
+
+
+.bar-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  width: 200px;
+}
+
+.item-num {
+  display: flex;
+  align-items: center;
+  background-color: hsla(0, 0%, 0%, 0);
+  border: 1px solid var(--c-n4);
+  color: var(--c-n4);
+  width: 32px;
+  border-radius: 50%;
+}
+
+.bar-item.active .item-num {
+  background-color: var(--c-4);
+  border: 1px solid var(--c-4);
+  color: var(--c-1);
+}
+
+.num {
+  display: block;
+  margin: 0 auto;
+}
+
+.item-step {
+  display: flex;
+  flex-direction: column;
+}

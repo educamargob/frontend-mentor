@@ -1,0 +1,47 @@
+:root {
+  /* Primary */
+  --c-1: hsl(213, 96%, 18%);
+  --c-2: hsl(243, 100%, 62%);
+  --c-3: hsl(228, 100%, 84%);
+  --c-4: hsl(206, 94%, 87%);
+  --c-5: hsl(354, 84%, 57%);
+
+  /* Neutral */
+  --c-n0: hsl(231, 11%, 63%);
+  --c-n1: hsl(229, 24%, 87%);
+  --c-n2: hsl(217, 100%, 97%);
+  --c-n3: hsl(231, 100%, 99%);
+  --c-n4: hsl(0, 0%, 100%);
+}
+
+.c-1 {
+  color: var(--c-1);
+}
+.c-2 {
+  color: var(--c-2);
+}
+.c-3 {
+  color: var(--c-3);
+}
+.c-4 {
+  color: var(--c-4);
+}
+.c-5 {
+  color: var(--c-5);
+}
+
+.c-n0 {
+  color: var(--c-n0);
+}
+.c-n1 {
+  color: var(--c-n1);
+}
+.c-n2 {
+  color: var(--c-n2);
+}
+.c-n3 {
+  color: var(--c-n3);
+}
+.c-n4 {
+  color: var(--c-n4);
+}

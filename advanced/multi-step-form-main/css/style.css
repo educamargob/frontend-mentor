@@ -1,0 +1,16 @@
+/* Global */
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/* Utilities */
+@import "./utilities/colors.css";
+@import "./utilities/components.css";
+@import "./utilities/typography.css";
+@import "./utilities/form.css";
+
+/* form */
+@import "./form/side-bar.css";
+@import "./form/form.css";
+@import "./form/form-plan.css";
+@import "./form/form-addons.css";
