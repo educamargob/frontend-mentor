@@ -23,7 +23,12 @@
 .form-radio .option .price {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
+  display: none;
+}
+
+.form-radio .option .price.active{
+  display: flex;
 }
 
 .form-radio input[type=radio]{

@@ -7,10 +7,11 @@
 @import "./utilities/colors.css";
 @import "./utilities/components.css";
 @import "./utilities/typography.css";
-@import "./utilities/form.css";
 
 /* form */
 @import "./form/side-bar.css";
 @import "./form/form.css";
 @import "./form/form-plan.css";
 @import "./form/form-addons.css";
+@import "./form/confirm-data.css";
+@import "./form/thanks-page.css";

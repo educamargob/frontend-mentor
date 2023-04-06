@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   gap: 24px;
-  padding: 24px;
+  padding: 18px;
   box-sizing: border-box;
   border-radius: 12px;
   border: 1px solid var(--c-n1);
@@ -10,8 +10,13 @@
   position: relative;
 }
 
-.price {
+.addon-price {
   margin-left: auto;
+  display: none;
+}
+
+.addon-price.active {
+  display: flex;
 }
 
 .form-check .option::before {
@@ -24,7 +29,7 @@
 }
 
 .addon-description h2{
-  margin-bottom: 12px;
+  margin-bottom: 4px;
 }
 
 .form-check:not(:last-child) {
@@ -33,12 +38,6 @@
 
 .form-check .option:hover {
   background-color: var(--c-n2);
-}
-
-.plan .option .price {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 
 .form-check input[type=checkbox]{

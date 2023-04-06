@@ -22,16 +22,16 @@
   <section class="step-form container">
     <div class="side-bar">
       <ul class="bar-list">
-        <li class="bar-item active">
+        <li class="bar-item">
           <div class="item-num font-1-s-b">
             <span class="num">1</span>
           </div>
-          <div class="item-step">
+          <div class="item-step" onclick="openTab(0)">
             <span class="font-1-s c-n1">STEP 1</span>
             <span class="font-1-s-b c-n4">YOUR INFO</span>
           </div>
         </li>
-        <li class="bar-item">
+        <li class="bar-item" onclick="openTab(1)">
           <div class="item-num font-1-s-b ">
             <span class="num">2</span>
           </div>
@@ -40,7 +40,7 @@
             <span class="font-1-s-b c-n4">SELECT PLAN</span>
           </div>
         </li>
-        <li class="bar-item">
+        <li class="bar-item" onclick="openTab(2)">
           <div class="item-num font-1-s-b ">
             <span class="num">3</span>
           </div>
@@ -49,7 +49,7 @@
             <span class="font-1-s-b c-n4">ADD-ONS</span>
           </div>
         </li>
-        <li class="bar-item">
+        <li class="bar-item" onclick="openTab(3)">
           <div class="item-num font-1-s-b ">
             <span class="num">4</span>
           </div>
@@ -62,7 +62,7 @@
     </div>
 
     <div class="form">
-      <form action="./" method="POST">
+      <form class="active" action="./" method="POST">
         <div class="form-tab info">
           <h1 class="font-1-xx">Personal info</h1>
           <p class="font-1-x c-n0">Please provide your name, email address, and phone number.</p>
@@ -85,32 +85,47 @@
             <div class="form-item">
               <ul class="form-options" id="plan">
                 <li class="form-radio">
-                  <input type="radio" name="rGroup" id="arcade" checked>
+                  <input type="radio" name="rGroup" id="arcade" value="Arcade" checked>
                   <label class="option font-1-x-b" for="arcade">
                     <img src="./assets/images/icon-arcade.svg" alt="arcade-icon">
-                    <div class="price">
+                    <div class="price active monthly">
                       <span>Arcade</span>
-                      <span class="font-1-m c-n0">$15/mo</span>
+                      <span class="font-1-m c-n0">$9/mo</span>
+                    </div>
+                    <div class="price yearly">
+                      <span>Arcade</span>
+                      <span class="font-1-m c-n0">$90/yr</span>
+                      <span class="font-1-x">2 months free</span>
                     </div>
                   </label>
                 </li>
                 <li class="form-radio">
-                  <input type="radio" name="rGroup" id="advanced">
+                  <input type="radio" name="rGroup" id="advanced" value="Advanced">
                   <label class="option font-1-x-b" for="advanced">
                     <img src="./assets/images/icon-advanced.svg" alt="arcade-icon">
-                    <div class="price">
+                    <div class="price active monthly">
                       <span>Advanced</span>
-                      <span class="font-1-m c-n0">$15/mo</span>
+                      <span class="font-1-m c-n0">$12/mo</span>
+                    </div>
+                    <div class="price yearly">
+                      <span>Advanced</span>
+                      <span class="font-1-m c-n0">$120/yr</span>
+                      <span class="font-1-x">2 months free</span>
                     </div>
                   </label>
                 </li>
                 <li class="form-radio">
-                  <input type="radio" name="rGroup" id="pro">
+                  <input type="radio" name="rGroup" id="pro" value="Pro">
                   <label class="option font-1-x-b" for="pro">
                     <img src="./assets/images/icon-pro.svg" alt="arcade-icon">
-                    <div class="price">
+                    <div class="price active monthly">
                       <span>Pro</span>
                       <span class="font-1-m c-n0">$15/mo</span>
+                    </div>
+                    <div class="price yearly">
+                      <span>Pro</span>
+                      <span class="font-1-m c-n0">$150/yr</span>
+                      <span class="font-1-x">2 months free</span>
                     </div>
                   </label>
                 </li>
@@ -120,103 +135,88 @@
               <div class="plan-choices c-t3 font-1-ms">
                 <span class="font-1-s-b active" id="monthly">Monthly</span>
                   <label class="switch">
-                    <input type="checkbox" name="plan" id="rd-plan">
+                    <input type="checkbox" name="plan" id="rd-plan" value="Yearly">
                     <span class="slider round"></span>
                   </label>
-                  <span class="font-1-s-b" id="Yearly">Yearly</span>
+                  <span class="font-1-s-b" id="yearly">Yearly</span>
               </div>
             </div>
         </div>
-        <div class="form-tab active addons">
+        <div class="form-tab addons">
           <h1 class="font-1-xx">Pick add-ons</h1>
           <p class="font-1-x c-n0">Add-ons help enhance your gaming experience.</p>
             <div class="form-item">
               <ul class="form-options">
                 <li class="form-check">
-                  <input type="checkbox" name="online" id="online">
+                  <input type="checkbox" name="online" id="online" value="Online service">
                   <label class="option font-1-x-b" for="online">
                       <div class="addon-description">
-                        <h2 class="font-1-x-b">Online Service</h2>
+                        <h2 class="font-1-x-b">Online service</h2>
                         <p class="font-1-s c-n0">Access to multiplayer games</p>
                       </div>
-                      <span class="price font-1-m c-2">+$10/yr</span>
+                      <span class="addon-price active font-1-m c-2">+$1/mo</span>
+                      <span class="addon-price font-1-m c-2">+$10/yr</span>
                   </label>
                 </li>
                 <li class="form-check">
-                  <input type="checkbox" name="large" id="large">
+                  <input type="checkbox" name="large" id="large" value="Larger storage">
                   <label class="option font-1-x-b" for="large">
                       <div class="addon-description">
                         <h2 class="font-1-x-b">Larger storage</h2>
                         <p class="font-1-s c-n0">Extra 1TB of cloud save</p>
                       </div>
-                      <span class="price font-1-m c-2">+$20/yr</span>
+                      <span class="addon-price active font-1-m c-2">+$2/mo</span>
+                      <span class="addon-price font-1-m c-2">+$20/yr</span>
                   </label>
                 </li>
                 <li class="form-check">
-                  <input type="checkbox" name="custom" id="custom">
+                  <input type="checkbox" name="custom" id="custom" value="Customizable profile">
                   <label class="option font-1-x-b" for="custom">
                       <div class="addon-description">
                         <h2 class="font-1-x-b">Customizable profile</h2>
                         <p class="font-1-s c-n0">Customizable profile</p>
                       </div>
-                      <span class="price font-1-m c-2">+$20/yr</span>
+                      <span class="addon-price active font-1-m c-2">+$2/mo</span>
+                      <span class="addon-price font-1-m c-2">+$20/yr</span>
                   </label>
                 </li>
               </ul>
             </div>
         </div>
+        <div class="form-tab finishing">
+          <h1 class="font-1-xx">Finishing up</h1>
+          <p class="font-1-x c-n0">Double-check everythin looks OK before confirming.</p>
+          <div class="confirm-data">
+            <div class="data-plan">
+              <div>
+                <h3 class="font-1-x-b" id="plan-title">Arcade (Monthly)</h3>
+                <button type="button" class="button-link" onclick="nextBack(-2)">Change</button>
+              </div>
+              <span class="font-1-x-b" id="plan-value">$9/mo</span>
+            </div>
+          </div>
+          <div class="data-total">
+            <span class="font-1-s c-n0">Total (per month)</span>
+            <span class="font-1-xx-s c-2">+$12/mo</span>
+          </div>
+        </div>
         <div class="buttons">
-          <button class="button-sm">Go Back</button>
-          <button class="button">Next Step</button>
+          <button type="button" class="button-sm" id="backBtn" onclick="nextBack(-1)">Go Back</button>
+          <button type="button" class="button" id="nextBtn" onclick="nextBack(1)">Next Step</button>
         </div>
       </form>
-    </div>
+      <div class="thanks-page">
+        <img src="./assets/images/icon-thank-you.svg" class="thanks-image" alt="">
+        <h2 class="font-1-xx">Thank You</h2>
+        <p class="font-1-x c-n0">
+          Thanks for confirming your subscription! We hope you have fun 
+          using our platform. If you ever need support, please feel free 
+          to email us at support@loremgaming.com.
+        </p>
+      </div>
   </section>
 
-
-
-  <!-- Step 2 end -->
-
-  <!-- Step 3 start -->
-
-  Online service
-  Access to multiplayer games
-  +$1/mo
-
-  Larger storage
-  Extra 1TB of cloud save
-  +$2/mo
-
-  Customizable Profile
-  Custom theme on your profile
-  +$2/mo
-
-  Go Back
-  Next Step
-
-  <!-- Step 3 end -->
-
-  <!-- Step 4 start -->
-
-  Finishing up
-  Double-check everything looks OK before confirming.
-
-  <!-- Dynamically add subscription and add-on selections here -->
-
-  Total (per month/year)
-
-  Go Back
-  Confirm
-
-  <!-- Step 4 end -->
-
-  <!-- Step 5 start -->
-
-  Thank you!
-
-  Thanks for confirming your subscription! We hope you have fun 
-  using our platform. If you ever need support, please feel free 
-  to email us at support@loremgaming.com.
+ 
 
   <!-- Step 5 end -->
   
@@ -224,5 +224,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./js/summary.js"></script>
+  <script src="./js/multi-step-form.js"></script>
+  <script src="./js/plan-type.js"></script>
 </body>
 </html>

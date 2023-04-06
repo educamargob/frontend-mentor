@@ -1,0 +1,46 @@
+.confirm-data {
+  margin-top: 24px;
+  background-color: var(--c-n2);
+  border-radius: 12px;
+}
+
+.data-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+
+.data-addons {
+  position: relative;
+  padding: 24px;
+}
+
+.data-addons::before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: calc(100% - 48px);
+  position: absolute;
+  top: 0;
+  left: 24px;
+  background-color: var(--c-n1);
+}
+
+.data-addon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data-addon:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.data-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}

@@ -37,6 +37,28 @@
   color: var(--c-3);
 }
 
+.button-link {
+  display: block;
+  font: 400 0.875rem 'Ubuntu', sans-serif;
+  padding: 0;
+  padding-top: 8px;
+  background-color: hsla(0, 0%, 0%, 0);
+  color: var(--c-n0);
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.button-link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--c-n0);
+  position: absolute;
+  bottom: 1px;
+}
+
 @media (max-width: 1000px){
   .container {
     padding: 20px;
