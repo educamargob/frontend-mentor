@@ -65,13 +65,9 @@
     max-width: 1000px;
   }
   .button {
-    font: 700 1rem 'Poppins', sans-serif;
+    font: 500 1rem'Ubuntu', sans-serif;
     padding: 10px 24px;
-  }
-  
-  .button:hover {
-    color: var(--c-n0);
-    background-color: hsl(180, 81%, 69%);
+    border-radius: 4px;
   }
 }
 

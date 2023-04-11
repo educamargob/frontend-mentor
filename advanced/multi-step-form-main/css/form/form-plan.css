@@ -108,3 +108,24 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+@media (max-width: 800px) {
+  .form-options#plan {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  .form-options#plan {
+    grid-template-columns: 1fr;
+  }
+
+  .form-radio .option {
+    height: initial;
+    flex-direction: row;
+    justify-content: initial;
+    gap: 16px;
+    align-items: start;
+    padding: 14px 16px;
+  }
+}

@@ -57,3 +57,10 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (max-width: 700px) {
+  .form-check .option {
+    padding: 12px;
+    gap: 16px;
+  }
+}
