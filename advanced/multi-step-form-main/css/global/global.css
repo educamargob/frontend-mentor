@@ -3,6 +3,7 @@ body {
   margin: 0px;
   font-family: 'Ubuntu', sans-serif;
   color: var(--c-1);
+  height: 100vh;
 }
 
 h1,
